@@ -7,11 +7,19 @@
 //
 
 #import "Continent.h"
-
+#import "CoreData.h"
 
 @implementation Continent
 
 @dynamic name;
 @dynamic countries;
+
++ (Continent*)insertContinent
+{
+    NSManagedObjectContext *context = [[CoreData defaultCoreData] managedObjectContext];
+    Continent *continent = [NSEntityDescription insertNewObjectForEntityForName:@"Continent"
+                                                         inManagedObjectContext:context];
+    return continent;
+}
 
 @end

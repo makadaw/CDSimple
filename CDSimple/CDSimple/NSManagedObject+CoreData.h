@@ -10,4 +10,6 @@
 
 @interface NSManagedObject (CoreData)
 
+- (BOOL)saveContext;
+
 @end

@@ -14,6 +14,9 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *countries;
+
++ (Continent*)insertContinent;
+
 @end
 
 @interface Continent (CoreDataGeneratedAccessors)

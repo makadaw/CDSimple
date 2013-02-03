@@ -10,4 +10,9 @@
 
 @implementation NSManagedObject (CoreData)
 
+- (BOOL)saveContext
+{
+    //You need to create this method
+}
+
 @end
